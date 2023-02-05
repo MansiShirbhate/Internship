@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Sign Up</title>
+    <style>
+        body{
+            background-color: rgb(214, 128, 91);
+        }
+        form{
+            background-color: rgb(209, 180, 158);
+        }
+        #button{
+            background-color: yellow;
+        }
+        input{
+            width: 190px;
+        }    
+        select{
+            width: 190px;
+        }    
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid gray;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Sign Up</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mobile">Mobile:</label>
+      <input type="tel" id="mobile" name="mobile" required><br><br>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required><br><br>
+
+      <label for="course">Course Interested:</label>
+      <select id="course" name="course">
+        <option value="">Choose one option</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Cybersecurity">Cybersecurity</option>
+      </select><br><br>
+
+      <input id="button" type="submit" value="Sign Up">
+    </form>
+  </body>
+</html>
